@@ -1,23 +1,34 @@
-import logo from './logo.svg'
-import './App.css'
+// JSX (JavaScriptml e XML)
+
+// import React, { useState } from 'react';
+
+import React from 'react';
+import './global.css'
+//import Header from './Header'
+import Routes from './routes';
+
+/* function App() {
+  const [counter, setCounter] = useState(0);
+
+  // Array useState[valor, funcaoDeAtualizacao]
+
+  function increment() {
+    setCounter(counter + 5)
+  }
+
+  return (
+    <div>
+      <Header title="Semana Omnistack"/>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment}>Incrementos</button>
+    </div>
+  );
+} */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello World!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  )
+    <Routes />
+  );
 }
 
 export default App
